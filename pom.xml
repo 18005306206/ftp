@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jk</groupId>
+  <artifactId>ftp</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ftp Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <!--引入junit对应的测试jar包 -->
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+		<!--添加scope作用域为test时，只有测试的时候才引入jar包 -->
+		<scope>test</scope>
+	</dependency>
+    <!--引入commons-fileupload,文件上传时候用到的jar包-->
+	<dependency>
+		<groupId>commons-fileupload</groupId>
+		<artifactId>commons-fileupload</artifactId>
+		<version>1.2.2</version>
+	</dependency>
+	<dependency>
+	<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.4</version>
+	</dependency>
+	<dependency>
+  <groupId>commons-net</groupId>
+  <artifactId>commons-net</artifactId>
+  <version>3.5</version>
+</dependency>
+  </dependencies>
+  <build>
+    <finalName>ftp</finalName>
+  </build>
+</project>
